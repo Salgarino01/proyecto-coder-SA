@@ -3,248 +3,318 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Acme', sans-serif;
-    font-family: 'Fira Sans', sans-serif;
 }
 
 
 body {
-    background-color: yellow;
+    background-color: rgb(101, 101, 97);
 }
 
 a {
     text-decoration: none;
-    color: yellow;
-    cursor: pointer;
-    text-transform: uppercase;
+    color: white;
 }
 
-header {
-    background-color: rgb(6, 7, 0);
-    margin: auto 0;
-    color: black;
-    width: auto;
-    height: 150px;
-
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-bottom: auto;
-    text-transform: uppercase;
-    
-
-}
-
-.logo {
-    width: 7rem;
-    padding: 1px;
-    margin: auto;
-    opacity: 1;
-}
-
-nav ul {
-    list-style-type: none;
-    display: inline;
-    padding: 10px;
-}
-
-nav ul a {
-    color: yellow;
-    text-decoration: none;
-    padding: 2rem;
-    font-size: 20px;
-    font-size: 20px;
+a:hover {
+    background-color: grey;
 }
 
 .nombre {
-    color: rgb(3, 3, 3);
-    font-size: 80px;
-    padding: 30px;
-    text-align: left;
-    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 60px;
+    padding: auto;
+}
+
+/*NAV BAR*/
+
+.navbar>.container-fluid {
+    background-color: black;
+}
+
+.navbar>.container-fluid a {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.bg-body-tertiary {
+    background-color: black !important;
+}
+
+.navbar-toggler.collapsed {
+    border-color: yellow;
+}
+
+/* PRESENTACION PRODUCTOS*/
+
+.card-text {
+    color: black;
+}
+
+.col-md-8 {
+    background-color: grey;
+
+}
+
+.card.mb-3.m-5 {
+    display: flex;
+}
+
+/*CONTENEDOR DE PRODUCTOS*/
+
+.row.p-5.m-5 {
+    margin: 10px;
+}
+
+.btn.btn-primary {
+    background-color: grey;
+    border-color: grey;
+    color: yellow
+}
+
+.card-title {
+    text-align: center;
+    color: rgb(240, 240, 233);
+}
+
+.card-text {
+    text-align: justify;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.card.p-3.m-3 {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+/*PORTADA*/
+
+
+.portada {
+    display: inline-flex;
+    padding: 100px;
+    align-items: center;
+    position: relative;
+    left: 10%;
 }
 
 .ciencia {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin: 20px 0px;
+    margin-top: 2px;
+    margin-left: 0px;
+    background-color: rgb(28, 27, 27);
+    width: 350px;
+    height: 400px;
+}
 
-    font-size: 50px;
-    padding: 40px;
-    text-align: center;
+.video {
+    margin: 20px 0px;
+}
+
+.tciencia {
+    font-size: 40px;
     text-transform: uppercase;
+    margin: 20px;
+    color: white
 }
 
 .p1 {
+    margin: 20px;
     text-align: justify;
-    font-size: 30px;
-    padding: 20px;
+    font-weight: lighter;
+    color: white
 }
 
-.enlaceProductos {
-    color: black;
-    font-size: 40px;
-    padding: 30px;
-
-}
-
-.primera {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    text-align: center;
-}
-
-main {
-    max-width: 1320px;
-    padding: 30px;
-    margin: 0 auto;
-}
-
-.titulo2 {
-    font-size: 50px;
-    padding: 30px;
+.guiaP {
+    border: 5px;
+    background-color: grey;
     text-transform: uppercase;
-
-}
-
-.tituloP {
-    text-align: center;
-    font-size: 18px;
-    margin: 10px;
-    padding: 20px;
-    text-transform: uppercase;
-}
-
-.tituloProductos {
-    font-size: 30px;
-    padding: 20px;
-    margin: 10px;
-    text-transform: uppercase;
-
-
-}
-
-.p2 {
-    font-size: 20px;
-    padding: 30px;
-    padding-top: 5px;
-
-}
-
-.p1Product {
-    margin: 10px;
-    padding: 16px;
-}
-
-.productos {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    text-align: justify;
-    width: 310px;
     margin: 30px;
-    border-radius: 5px;
-    background-color: rgb(0, 0, 0);
-    color: yellow;
+    text-align: center;
+    border-radius: 10px;
 }
 
-.imgProducto {
-    width: 350px;
-    padding-right: 50px;
-}
-
-.pagProductos {
-    display: inline-block;
-}
-
-.mtto {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    text-align: justify;
-    width: 1200px;
-    margin: 30px;
-    border-radius: 5px;
-    background-color: yellow;
-    color: rgb(2, 2, 2);
-}
-
-.imgMtto {
-    width: 600px;
-    padding: 30px;
-    padding-top: 5px;
-    margin-left: 26%;
-}
-
-.list1 {
+.tituloGuia {
     font-size: 20px;
-    padding: 50px;
-    padding-top: 5px;
-    text-align: justify;
+    height: 50px;
+    padding: 5px;
+    margin-top: 1%;
 }
 
-.tituloMtto {
-    text-align: left;
-    font-size: 20px;
-    margin-left: 30px;
-    text-transform: uppercase;
-}
-
-.historia {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    width: 1200px;
-}
+/*FORMULARIO*/
 
 
 .formulario {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    background-color: black;
-    color: yellow;
-    width: 600px;
-    height: 500px;
-    padding: 40px;
-    margin: 10px;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color:black;
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-.form {
-    padding-inline: 20px;
-    margin: 10px;
+.boton{
+    background-color: rgb(1, 14, 10);
+    color: white;
+    border-radius: 6px;
+    width: 70px;
 }
 
-.vehiculo {
-    padding-inline: 20px;
-    margin: 10px;
+.titleConta{
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-.elecionproducto {
-    padding-top: 0;
-    margin-left: 30px;
-
+@media (min-width:768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.reciboDeInfo {
-    padding-inline: 20px;
-    margin: 10px;
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
 }
+@media (min-width:480px) {
+    .campo {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .campo{
+        flex: 0 0 calc(50% - .5rem)
+    }
+}
+.campo label {
+    color:black;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+@media (min-width:480px) {
+    .campo label {
+        flex: 0 0 90px;
+    }
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+@media (min-width: 768px) {
+    :is(.campo) :is( 
+        input[type="text"], 
+        input[type="text"],  
+        input[type="tel"],  
+        input[type="mail"] , 
+        textarea ) {
+        flex: 1;
+    }
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 4rem;
+}
+
+.enviar {
+    display: flex;
+    justify-content: flex-end;   
+}
+
+/*FORMULARIO*/
+
+/*FOOTER*/
 
 footer {
-    background-color: rgb(6, 7, 0);
-    padding: 30px;
-    margin: 0 auto;
+	background:#000305;
+	width: 100%;
+	padding:20px;
+
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+    align-items: center;
 }
 
-footer div ul li {
-    display: inline;
-    margin: 20px;
+footer .links {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer .links a {
+	flex-grow:1;
+	color:yellow;
+	padding:10px;
+	text-align: center;
+	text-decoration:none;
     text-transform: uppercase;
-
 }
 
-.logo2 {
-    width: 7.5rem;
-    padding: 1px;
-    margin: auto;
-    opacity: 1;
+footer .social {
+color: yellow;
 }
 
-.logoContacto {
-    width: 7.5rem;
-    padding: 1px;
-    margin: auto;
+footer .social a {
+	color:yellow;
+	text-decoration: none;
+	padding:10px;
+	display: inline-block;
 }
 
-span {
-    color: white;
+.social{
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 300px) {
+
+	footer {
+		justify-content:center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+
+	footer {
+		justify-content:space-evenly;
+        text-align: center;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	footer {
+		justify-content:space-evenly;
+        text-align: center;
+	}
 }

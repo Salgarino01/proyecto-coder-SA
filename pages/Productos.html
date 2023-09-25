@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/d&slogo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Productos D&S Supply</title>
 </head>
@@ -13,81 +15,152 @@
 
 <body>
     <header>
-
-        <nav>
-            <div>
-                <ul class="nav">
-                    <img class="logo" src="../img/d&slogo.png" title="D&slogo" width="150px">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/Productos.html">Productos</a></li>
-                    <li><a href="../pages/Mantenimiento.html">Concejos De Mantenimiento</a></li>
-                    <li><a href="../pages/Contacto.html">Contacto</a></li>
-                    <li><a href="../pages/Nosotros.html">Nosotros</a></li>
-                </ul>
-            </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                </a>
+                <img src="../img/d&slogo.png" alt="logo" title="d&s" width="80px">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">index</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./Productos.html">productos</a>                        
+                        <a class="nav-link" href="./Contacto.html">contacto</a>                      
+                    </div>
+                </div>
         </nav>
     </header>
     <main>
-        <h2 class="titulo2">Productos</h2>
-        <section class="pagProductos">
-            <div class="iniProductos">
-                <h2 class="tituloProductos">Motor y sistemas de combustible</h2>
-                <p class="p2">
-                    Desde hace 2 años y por más millas de las que se pueden contar, STP® es uno de los nombres que más
-                    confianza inspira en el cuidado automotor. Como parte del mantenimiento básico regular, el uso de
-                    los
-                    productos STP® puede ayudar a un mejor funcionamiento de su motor durante más tiempo.
-                </p>
+
+        <!--Nueva tarjeta de titulo-->
+        <div class="card mb-3 m-5" style="max-width: 822px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="../img/d&slogo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Productos</h3>
+                        <h5>Motor y sistemas de combustible</h5>
+                        <p class="card-text">
+                            Desde hace 2 años y por más millas de las que se pueden contar, STP® es uno
+                            de los nombres que más confianza inspira en el cuidado automotor. Como parte del mantenimiento básico regular,el uso de los productos STP® puede ayudar a un mejor funcionamiento de su motor durante más tiempo.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Ciencia para los motores</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Nueva tarjeta de titulo-->
+
+        <!--CONTENEDOR-->
+
+        <div class="row p-5 m-5">
+            <div class="card p-3 m-3" style="width: 18rem;">
+                <h5 class="card-title">Limpia inyectores de combustible super concentrado</h5>
+                <img src="../img/LIMPIA INYECTORES DE COMBUSTIBLE SUPER CONCENTRADO.png" title="limpiador de inyectores"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">Destapa los inyectores de combustible sucios y restablece el
+                        rendimiento, remuebe los depositos de carbon generados por la combustion.
+                    </p>
+                    <a href="https://www.stp.com/es/productos/" target="_blank" class="btn btn-primary">Mayor
+                        Información</a>
+                </div>
+            </div>
+            <div class="card p-3 m-3" style="width: 18rem;">
+                <h5 class="card-title">Tratamiento para gasolina</h5>
+                <img src="../img/TRATAMIENTO PARA GASOLINA.png" title="tratamiento para gasolina" class="card-img-top"
+                    alt="">
+                <div class="card-body">
+                    <p class="card-text"> Mejora la calidad de la gasolina y ayuda a mantener limpios los
+                        inyectores, prolongando la vida util del inyector,
+                        y las valvulas mejorando asi el rendimiento del motor.</p>
+                    <a href="https://www.stp.com/es/productos/" target="_blank" class="btn btn-primary">Mayor
+                        Información</a>
+                </div>
+            </div>
+            <div class="card p-3 m-3" style="width: 18rem;">
+                <h5 class="card-title">Tratamiento para aceite</h5>
+                <img src="../img/TRATAMIENTO PARA ACEITE.png" title="Tratamiento de aceite" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text"> Ayuda a lubricar las partes móviles del motor y reducir el consumo de
+                        aceite, Mejorador de la viscosidad agregando una capa de lubricacion extra a las partes internas
+                        del motor.
+                    </p>
+                    <a href="https://www.stp.com/es/productos/" target="_blank" class="btn btn-primary">Mayor
+                        Información</a>
+                </div>
+            </div>
+            <div class="card p-3 m-3" style="width: 18rem;">
+                <h5 class="card-title">Tratamiento anti-humo</h5>
+                <img src="../img/TRATAMIENTO ANTI-HUMO.png" title="Anti-humo" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">Reduce el humo del caño de escape y disminuye el contacto entre
+                        partes de
+                        metal con un colchón
+                        grueso de aceite.
+                    </p>
+                    <a href="https://www.stp.com/es/productos/" target="_blank" class="btn btn-primary">Mayor
+                        Información</a>
+                </div>
             </div>
 
-            <div class="productos">
-                <h3 class="tituloP">Limpia inyectores de combustible super concentrado</h3>
-                <img class="imgProducto" src="../img/LIMPIA INYECTORES DE COMBUSTIBLE SUPER CONCENTRADO.png"
-                    title="limpiador de inyectores">
-                <p class="p1Product">Destapa los inyectores de combustible sucios y restablece el rendimiento.</p>
+            <div class="card p-3 m-3" style="width: 18rem;">
+                <h5 class="card-title">Tratamiento anti-humo</h5>
+                <img src="../img/TRATAMIENTO ANTI-HUMO.png" title="Anti-humo" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">Reduce el humo del caño de escape y disminuye el contacto entre
+                        partes de
+                        metal con un colchón
+                        grueso de aceite.
+                    </p>
+                    <a href="https://www.stp.com/es/productos/" target="_blank" class="btn btn-primary">Mayor
+                        Información</a>
+                </div>
+            </div>
+            <div class="card p-3 m-3" style="width: 18rem;">
+                <h5 class="card-title">Tratamiento anti-humo</h5>
+                <img src="../img/TRATAMIENTO ANTI-HUMO.png" title="Anti-humo" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">Reduce el humo del caño de escape y disminuye el contacto entre
+                        partes de
+                        metal con un colchón
+                        grueso de aceite.
+                    </p>
+                    <a href="https://www.stp.com/es/productos/" target="_blank" class="btn btn-primary">Mayor
+                        Información</a>
+                </div>
             </div>
 
-            <div class="productos">
-                <h3 class="tituloP">Tratamiento para gasolina</h3>
-                <img class="imgProducto" src="../img/TRATAMIENTO PARA GASOLINA.png" title="Aditivo para gasolina">
-                <p class="p1Product">
-                    Mejora la calidad de la gasolina y ayuda a mantener limpios los inyectores de combustible y válvulas
-                    de alimentación con el uso regular.
-                </p>
-            </div>
-
-            <div class="productos">
-                <h3 class="tituloP">Tratamiento para aceite</h3>
-                <img class="imgProducto" src="../img/TRATAMIENTO PARA ACEITE.png" title="Tratamiento de aceite">
-                <p class="p1Product">Ayuda a lubricar las partes móviles del motor y reducir el consumo de aceite.
-                    Mejorador de la
-                    viscosidad
-                </p>
-            </div>
-
-            <div class="productos">
-                <h3 class="tituloP">Tratamiento anti-humo</h3>
-                <img class="imgProducto" src="../img/TRATAMIENTO ANTI-HUMO.png" title="Anti-humo">
-                <p class="p1Product">
-                    Reduce el humo del caño de escape y disminuye el contacto entre partes de metal con un colchón
-                    grueso de aceite.
-                </p>
-            </div>
+        </div>
+        <!--CONTENEDOR-->
         </section>
     </main>
 
     <footer>
-        <div>
-            <ul>
-                <img class="logo2" src="../img/d&slogo.png" title="D&slogo" width="150px">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/Productos.html">Productos</a></li>
-                <li><a href="../pages/Contacto.html">Contacto</a></li>
-                <li><a href="../pages/Nosotros.html">Nosotros</a></li>
-            </ul>
+        <section class="links"> 
+            <a href="../index.html" target="_blank">Inicio</a>
+            <a href="./Productos.html">Productos</a>
+            <a href="./Contacto.html">Contacto</a>
+        </section>
+
+        <div class="social">
+            <a">
+            <a href="https://www.facebook.com/profile.php?id=100064131721160&mibextid=ZbWKwL" target="_blank">Facebook</a>
+            <a href="https://instagram.com/supplyds?igshid=NjIwNzIyMDk2Mg=" target="_blank" >Instagram</a>
+            <img src="../img/d&slogo.png" width=" 150px" title="d&slogo" alt="logo"></a>
         </div>
-        <span>© 2023 D&S Supply. Reservados todos los derechos.</span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
