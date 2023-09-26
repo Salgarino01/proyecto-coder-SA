@@ -5,7 +5,6 @@
     font-family: 'Acme', sans-serif;
 }
 
-
 body {
     background-color: rgb(101, 101, 97);
 }
@@ -52,15 +51,17 @@ a:hover {
 
 .card-text {
     color: black;
+   
 }
 
 .col-md-8 {
     background-color: grey;
-
+   
 }
 
 .card.mb-3.m-5 {
-    display: flex;
+   text-align: center;
+    
 }
 
 /*CONTENEDOR DE PRODUCTOS*/
@@ -91,10 +92,7 @@ a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-
-
 /*PORTADA*/
-
 
 .portada {
     display: inline-flex;
@@ -148,8 +146,29 @@ a:hover {
     margin-top: 1%;
 }
 
-/*FORMULARIO*/
+/*Main responsive*/
 
+@media screen and (max-width: 600px) {
+	.portada {
+        display: flex;
+        flex-wrap: wrap;
+        left: 20px; 
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 330px;
+        margin-top: 0px;   
+    }
+
+    .enlaceProductos{
+        font-size: 10x;
+    }
+
+}
+/*FORMULARIO*/
 
 .formulario {
     background-color: yellow;
