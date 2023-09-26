@@ -149,7 +149,12 @@ a:hover {
 /*Main responsive*/
 
 @media screen and (max-width: 768px) {
-	.portada {
+	.mainIndex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portada {
         display: flex;
         flex-wrap: wrap;
         left: 20px; 
@@ -170,6 +175,7 @@ a:hover {
     }
 
 }
+
 /*FORMULARIO*/
 
 .formulario {
