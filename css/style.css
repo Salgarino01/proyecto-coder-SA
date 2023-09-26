@@ -148,19 +148,21 @@ a:hover {
 
 /*Main responsive*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.portada {
         display: flex;
         flex-wrap: wrap;
         left: 20px; 
+        max-width: 800px;
     }
 
     .video{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 330px;
+        width: 350px;
         margin-top: 0px;   
+        max-width: 800px;
     }
 
     .enlaceProductos{
