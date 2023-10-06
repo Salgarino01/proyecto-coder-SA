@@ -6,10 +6,6 @@
   
 }
 
-body {
-    background-color: rgb(224, 223, 226);
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -22,6 +18,7 @@ h5{
 
 a:hover {
     background-color: grey;
+    border-radius: 10px;
 }
 
 .nombre {
@@ -89,10 +86,11 @@ a:hover {
 }
 
 .btn.btn-primary {
-    background-color: grey;
+    background-color:yellow;
     border-color: grey;
-    color: yellow;
+    color: black;
     font-weight: bold;
+    
 }
 
 .card-title {
@@ -348,6 +346,11 @@ margin: 40px;
 
 /*FORMULARIO*/
 
+/*DISTRIBUIDORES*/
+
+
+
+
 /*FOOTER*/
 
 footer {
@@ -425,6 +428,8 @@ footer .social a {
     place-content: center;
     gap: auto;
     color: white;
+    margin: 40px;
+    padding: 20px;
 
 }
 
