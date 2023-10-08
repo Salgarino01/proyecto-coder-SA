@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    
+
 }
 
 a {
@@ -18,6 +18,14 @@ a {
     color: white;
 }
 
+h1{
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+h2{
+    text-transform: uppercase;
+}
 h5 {
     font-weight: bolder;
 
@@ -39,8 +47,6 @@ a:hover {
 }
 
 /*NAV BAR*/
-
-
 
 .navbar>.container-fluid {
     background-color: black;
@@ -350,14 +356,9 @@ a:hover {
 
 /*FORMULARIO*/
 
-/*DISTRIBUIDORES*/
-
-
-
-
 /*FOOTER*/
 
-.cuadroFoot{
+.cuadroFoot {
     background: #000305;
     width: 100%;
     padding: 20px;
@@ -393,14 +394,14 @@ footer .social a {
     padding: 10px;
     display: inline-block;
 }
-.derechos{
+
+.derechos {
     color: black;
     background-color: yellow;
     font-weight: bolder;
     text-align: center;
-    
-  
 }
+
 .social {
     text-transform: uppercase;
 }
@@ -452,7 +453,6 @@ footer .social a {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: black;
     border-radius: 10px;
-
 }
 
 #groupcard .mtto {
@@ -507,8 +507,6 @@ footer .social a {
 
 /* mtto responsive*/
 
-
-
 @media screen and (max-width: 600px) {
 
     .groupCard {
@@ -555,4 +553,23 @@ footer .social a {
         text-align: justify;
     }
 
+}
+
+/*DISTRIBUIDORES*/
+
+.container.text-center {
+   background-color: black;
+    border-radius: 5px;
+    border: 20px;
+    padding: 50px;
+    margin-block: 20px;
+
+
+    -webkit-box-shadow: 6px 6px 54px -8px rgba(255,234,0,1);
+    -moz-box-shadow: 6px 6px 54px -8px rgba(255,234,0,1);
+    box-shadow: 6px 6px 54px -8px rgba(255,234,0,1);
+}
+
+.distr{
+ margin: 5%;   
 }
