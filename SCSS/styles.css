@@ -1,0 +1,507 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-image: url(../img/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 40px;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h5 {
+  font-weight: bolder;
+}
+
+a:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.nombre {
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  color: rgb(8, 8, 0);
+  font-size: 60px;
+  padding: auto;
+  font-weight: bolder;
+}
+
+/*NAV BAR*/
+.navbar > .container-fluid {
+  background-color: black;
+  justify-content: flex-end;
+}
+.navbar > .container-fluid a {
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.bg-body-tertiary {
+  background-color: black !important;
+}
+
+.navbar-toggler.collapsed {
+  border-color: yellow;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+/* PRESENTACION PRODUCTOS*/
+.card-text {
+  color: black;
+}
+
+.col-md-8 {
+  background-color: grey;
+}
+
+.card.mb-3.m-5 {
+  text-align: center;
+}
+
+/*CONTENEDOR DE PRODUCTOS*/
+.row.p-5.m-5 {
+  margin: 10px;
+}
+
+.btn.btn-primary {
+  background-color: yellow;
+  border-color: grey;
+  color: black;
+  font-weight: bold;
+}
+
+.card-title {
+  text-align: center;
+  color: rgb(240, 240, 233);
+  font-weight: bolder;
+}
+
+.card-text {
+  text-align: justify;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 15px;
+}
+
+.card.p-3.m-3 {
+  background-color: rgb(0, 0, 0);
+}
+
+/*PORTADA*/
+.portada {
+  display: inline-flex;
+  padding: 100px;
+  align-items: center;
+  position: relative;
+  left: 10%;
+}
+
+.ciencia {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin: 20px 0px;
+  margin-top: 2px;
+  margin-left: 0px;
+  background-color: rgb(28, 27, 27);
+  width: 350px;
+  height: 430px;
+}
+
+.video {
+  margin: 20px 0px;
+}
+
+.tciencia {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 20px;
+  color: white;
+}
+
+.p1 {
+  margin: 20px;
+  text-align: justify;
+  font-weight: lighter;
+  color: white;
+}
+
+.guiaP {
+  border: 5px;
+  background-color: grey;
+  text-transform: uppercase;
+  margin: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tituloGuia {
+  font-size: 20px;
+  height: 60px;
+  padding: 5px;
+  margin-top: 1%;
+}
+
+/*Main responsive*/
+@media screen and (max-width: 800px) {
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .portada {
+    display: flex;
+    flex-wrap: wrap;
+    left: 20px;
+    max-width: 800px;
+    padding: 50px;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-top: 0px;
+    max-width: 800px;
+  }
+  .enlaceProductos {
+    font-size: 10x;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .portada {
+    display: flex;
+    flex-wrap: wrap;
+    left: 20px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 40px;
+    margin-top: 0px;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    max-width: 800px;
+    margin-top: 0px;
+  }
+  .enlaceProductos {
+    font-size: 10x;
+  }
+}
+/*FORMULARIO*/
+.form {
+  margin: 40px;
+}
+
+.formulario {
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+.formulario legend {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 2rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.boton {
+  background-color: rgb(1, 14, 10);
+  color: white;
+  border-radius: 6px;
+  width: 70px;
+}
+
+.titleConta {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .formulario {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+.contenedor-campos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.campo label {
+  color: black;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.campo input[type=text], .campo input[type=tel], .campo input[type=mail] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.campo textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .campo {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .campo {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+@media (min-width: 480px) {
+  .campo label {
+    flex: 0 0 90px;
+  }
+}
+@media (min-width: 768px) {
+  :is(.campo) :is(input[type=text],
+  input[type=text],
+  input[type=tel],
+  input[type=mail],
+  textarea) {
+    flex: 1;
+  }
+}
+.w-100 {
+  flex: 0 0 100%;
+}
+
+.campo textarea {
+  height: 4rem;
+}
+
+.enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*FORMULARIO*/
+/*FOOTER*/
+.cuadroFoot {
+  background: #000305;
+  width: 100%;
+  padding: 20px;
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: static;
+}
+
+footer .links {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .links a {
+  flex-grow: 1;
+  color: yellow;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer .social {
+  color: yellow;
+}
+footer .social a {
+  color: yellow;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.derechos {
+  color: black;
+  background-color: yellow;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.social {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 300px) {
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+/*COCEJOS MTTO NUEVO*/
+.groupCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1.5fr;
+  place-content: center;
+  gap: auto;
+  color: white;
+  margin: 40px;
+  padding: 20px;
+}
+
+.mtto {
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#groupcard .mtto {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4431372549);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+  text-align: center;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.titulo2 {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  font-weight: bolder;
+  margin: 15px;
+  padding: 10px;
+}
+
+.imgMtto {
+  padding-left: 25px;
+  border-radius: 5px;
+}
+
+.tituloMtto {
+  margin: 5px;
+  color: white;
+}
+
+.tituloProductos {
+  text-align: center;
+  color: white;
+  margin: 5px;
+}
+
+.p2 {
+  margin: 10px;
+}
+
+.scrollText {
+  overflow-y: scroll;
+  height: 150px;
+}
+
+/* mtto responsive*/
+@media screen and (max-width: 600px) {
+  .groupCard {
+    flex-direction: column;
+    display: flex;
+    width: 400px;
+    align-items: center;
+    font-size: 12px;
+    margin: 40px;
+    padding: 30px;
+  }
+  .p2, .list1 {
+    text-align: justify;
+  }
+  .titulo2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .groupCard {
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    margin: 40px;
+    margin-top: 20px;
+    padding: 40px;
+  }
+  .p2, .list1 {
+    text-align: justify;
+  }
+}
+/*DISTRIBUIDORES*/
+.container.text-center {
+  background-color: black;
+  border-radius: 5px;
+  border: 20px;
+  padding: 50px;
+  margin-block: 20px;
+  box-shadow: 6px 6px 54px -8px rgb(255, 234, 0);
+}
+
+.distr {
+  margin: 5%;
+}/*# sourceMappingURL=styles.css.map */
