@@ -16,6 +16,10 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
 
 h1 {
   text-transform: uppercase;
@@ -28,11 +32,6 @@ h2 {
 
 h5 {
   font-weight: bolder;
-}
-
-a:hover {
-  background-color: grey;
-  border-radius: 10px;
 }
 
 .nombre {
@@ -50,7 +49,6 @@ a:hover {
   background-color: black;
   justify-content: flex-end;
 }
-
 .navbar > .container-fluid a {
   color: yellow;
   text-transform: uppercase;
@@ -227,7 +225,6 @@ a:hover {
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
-
 .formulario legend {
   text-align: center;
   font-size: 1.2rem;
@@ -268,21 +265,18 @@ a:hover {
   margin-bottom: 1rem;
   width: 100%;
 }
-
 .campo label {
   color: black;
   font-weight: 700;
   margin-bottom: 0.5rem;
   display: block;
 }
-
 .campo input[type=text], .campo input[type=tel], .campo input[type=mail] {
   width: 100%;
   padding: 0.5rem;
   border: none;
   border-radius: 0.5rem;
 }
-
 .campo textarea {
   width: 100%;
   padding: 0.5rem;
@@ -346,7 +340,6 @@ footer .links {
   display: flex;
   flex-wrap: wrap;
 }
-
 footer .links a {
   flex-grow: 1;
   color: yellow;
@@ -355,11 +348,9 @@ footer .links a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 footer .social {
   color: yellow;
 }
-
 footer .social a {
   color: yellow;
   text-decoration: none;
@@ -507,11 +498,46 @@ footer .social a {
   border: 20px;
   padding: 50px;
   margin-block: 20px;
+  -webkit-box-shadow: 6px 6px 54px -8px rgb(255, 234, 0);
+  -moz-box-shadow: 6px 6px 54px -8px rgb(255, 234, 0);
   box-shadow: 6px 6px 54px -8px rgb(255, 234, 0);
 }
 
 .distr {
   margin: 5%;
-} 
+}
+
+/*ANIMACIONES*/
+.titleConta {
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.portada {
+  animation: backInUp;
+  animation-duration: 2s;
+}
+
+.col-md-4 {
+  animation: bounceOut;
+  animation-duration: 2s;
+}
+
+.formulario {
+  animation: fadeInBottomLeft;
+  animation-duration: 2s;
+}
+
+.groupCard {
+  animation: zoomInRight;
+  animation-duration: 2s;
+}
+
+.container.text-center {
+  animation: rotateIn;
+  animation-duration: 3s;
+}
+
+/*ANIMACIONES*/
 
 /*# sourceMappingURL=styles.css.map */

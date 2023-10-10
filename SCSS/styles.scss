@@ -15,6 +15,11 @@
   a {
     text-decoration: none;
     color: white;
+    
+    &:hover {
+        background-color: grey;
+        border-radius: 10px;
+      }
   }
   
   h1 {
@@ -28,11 +33,6 @@
   
   h5 {
     font-weight: bolder;
-  }
-  
-  a:hover {
-    background-color: grey;
-    border-radius: 10px;
   }
   
   .nombre {
@@ -552,3 +552,36 @@
   .distr {
     margin: 5%;
   } 
+
+/*ANIMACIONES*/
+.titleConta{
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.portada{
+  animation: backInUp ;
+  animation-duration: 2s;
+}
+
+.col-md-4{
+  animation: bounceOut;
+  animation-duration: 2s; 
+}
+
+.formulario {
+  animation: fadeInBottomLeft ;
+  animation-duration: 2s;
+}
+
+.groupCard{
+  animation: zoomInRight;
+  animation-duration: 2s;
+}
+
+.container.text-center{
+  animation: rotateIn;
+  animation-duration: 3s;
+}
+
+/*ANIMACIONES*/
