@@ -5,6 +5,11 @@
   font-family: "Fira Sans", sans-serif;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -38,18 +43,12 @@ h5 {
 }
 
 /*FOOTER*/
-.cuadroFoot {
-  background: #000305;
+footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  padding: 20px;
-  /* Flexbox */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  position: static;
+  height: 40px;
 }
-
 footer .links {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +60,16 @@ footer .links a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+footer .cuadroFoot {
+  background: #000305;
+  width: 100%;
+  padding: 20px;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 footer .social {
   color: yellow;
@@ -133,6 +142,7 @@ footer .social a {
   background-color: yellow;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 80px;
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
@@ -343,6 +353,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 /* PRESENTACION PRODUCTOS*/
