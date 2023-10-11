@@ -1,0 +1,73 @@
+/*FOOTER*/
+
+.cuadroFoot {
+  background: #000305;
+  width: 100%;
+  padding: 20px;
+
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: static;
+}
+
+footer {
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      flex-grow: 1;
+      color: yellow;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  .social {
+    color: yellow;
+
+    a {
+      color: yellow;
+      text-decoration: none;
+      padding: 10px;
+      display: inline-block;
+    }
+  }
+}
+
+.derechos {
+  color: black;
+  background-color: yellow;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.social {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 300px) {
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}

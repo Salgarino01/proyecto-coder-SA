@@ -5,13 +5,6 @@
   font-family: "Fira Sans", sans-serif;
 }
 
-body {
-  background-image: url(../img/BACKGROUND.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -44,6 +37,70 @@ h5 {
   font-weight: bolder;
 }
 
+/*FOOTER*/
+.cuadroFoot {
+  background: #000305;
+  width: 100%;
+  padding: 20px;
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: static;
+}
+
+footer .links {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .links a {
+  flex-grow: 1;
+  color: yellow;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer .social {
+  color: yellow;
+}
+footer .social a {
+  color: yellow;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.derechos {
+  color: black;
+  background-color: yellow;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.social {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 300px) {
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
 /*NAV BAR*/
 .navbar > .container-fluid {
   background-color: black;
@@ -67,152 +124,6 @@ h5 {
   text-align: center;
 }
 
-/* PRESENTACION PRODUCTOS*/
-.card-text {
-  color: black;
-}
-
-.col-md-8 {
-  background-color: grey;
-}
-
-.card.mb-3.m-5 {
-  text-align: center;
-}
-
-/*CONTENEDOR DE PRODUCTOS*/
-.row.p-5.m-5 {
-  margin: 10px;
-}
-
-.btn.btn-primary {
-  background-color: yellow;
-  border-color: grey;
-  color: black;
-  font-weight: bold;
-}
-
-.card-title {
-  text-align: center;
-  color: rgb(240, 240, 233);
-  font-weight: bolder;
-}
-
-.card-text {
-  text-align: justify;
-  color: white;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 15px;
-}
-
-.card.p-3.m-3 {
-  background-color: rgb(0, 0, 0);
-}
-
-/*PORTADA*/
-.portada {
-  display: inline-flex;
-  padding: 100px;
-  align-items: center;
-  position: relative;
-  left: 10%;
-}
-
-.ciencia {
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  margin: 20px 0px;
-  margin-top: 2px;
-  margin-left: 0px;
-  background-color: rgb(28, 27, 27);
-  width: 350px;
-  height: 430px;
-}
-
-.video {
-  margin: 20px 0px;
-}
-
-.tciencia {
-  font-size: 40px;
-  text-transform: uppercase;
-  margin: 20px;
-  color: white;
-}
-
-.p1 {
-  margin: 20px;
-  text-align: justify;
-  font-weight: lighter;
-  color: white;
-}
-
-.guiaP {
-  border: 5px;
-  background-color: grey;
-  text-transform: uppercase;
-  margin: 30px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.tituloGuia {
-  font-size: 20px;
-  height: 60px;
-  padding: 5px;
-  margin-top: 1%;
-}
-
-/*Main responsive*/
-@media screen and (max-width: 800px) {
-  .mainIndex {
-    display: flex;
-    flex-direction: column;
-  }
-  .portada {
-    display: flex;
-    flex-wrap: wrap;
-    left: 20px;
-    max-width: 800px;
-    padding: 50px;
-  }
-  .video {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 350px;
-    margin-top: 0px;
-    max-width: 800px;
-  }
-  .enlaceProductos {
-    font-size: 10x;
-  }
-}
-@media screen and (max-width: 600px) {
-  .mainIndex {
-    display: flex;
-    flex-direction: column;
-  }
-  .portada {
-    display: flex;
-    flex-wrap: wrap;
-    left: 20px;
-    max-width: 800px;
-    padding: 50px;
-    margin: 40px;
-    margin-top: 0px;
-  }
-  .video {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 350px;
-    max-width: 800px;
-    margin-top: 0px;
-  }
-  .enlaceProductos {
-    font-size: 10x;
-  }
-}
 /*FORMULARIO*/
 .form {
   margin: 40px;
@@ -323,71 +234,155 @@ h5 {
 }
 
 /*FORMULARIO*/
-/*FOOTER*/
-.cuadroFoot {
-  background: #000305;
-  width: 100%;
-  padding: 20px;
-  /* Flexbox */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+/*PORTADA*/
+.portada {
+  display: inline-flex;
+  padding: 100px;
   align-items: center;
-  position: static;
+  position: relative;
+  left: 10%;
 }
 
-footer .links {
-  display: flex;
-  flex-wrap: wrap;
+.ciencia {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin: 20px 0px;
+  margin-top: 2px;
+  margin-left: 0px;
+  background-color: rgb(28, 27, 27);
+  width: 350px;
+  height: 430px;
 }
-footer .links a {
-  flex-grow: 1;
-  color: yellow;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
+
+.video {
+  margin: 20px 0px;
+}
+
+.tciencia {
+  font-size: 40px;
   text-transform: uppercase;
-}
-footer .social {
-  color: yellow;
-}
-footer .social a {
-  color: yellow;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
+  margin: 20px;
+  color: white;
 }
 
-.derechos {
-  color: black;
-  background-color: yellow;
-  font-weight: bolder;
-  text-align: center;
+.p1 {
+  margin: 20px;
+  text-align: justify;
+  font-weight: lighter;
+  color: white;
 }
 
-.social {
+.guiaP {
+  border: 5px;
+  background-color: grey;
   text-transform: uppercase;
+  margin: 30px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-@media screen and (max-width: 300px) {
-  footer {
+.tituloGuia {
+  font-size: 20px;
+  height: 60px;
+  padding: 5px;
+  margin-top: 1%;
+}
+
+/*Main responsive*/
+@media screen and (max-width: 800px) {
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .portada {
+    display: flex;
+    flex-wrap: wrap;
+    left: 20px;
+    max-width: 800px;
+    padding: 50px;
+  }
+  .video {
+    display: flex;
     justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-top: 0px;
+    max-width: 800px;
+  }
+  .enlaceProductos {
+    font-size: 10x;
   }
 }
 @media screen and (max-width: 600px) {
-  footer {
-    justify-content: space-evenly;
-    text-align: center;
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .portada {
+    display: flex;
+    flex-wrap: wrap;
+    left: 20px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 40px;
+    margin-top: 0px;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    max-width: 800px;
+    margin-top: 0px;
+  }
+  .enlaceProductos {
+    font-size: 10x;
   }
 }
-@media screen and (max-width: 800px) {
-  footer {
-    justify-content: space-evenly;
-    text-align: center;
-  }
+body {
+  background-image: url(../img/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-/*COCEJOS MTTO NUEVO*/
+
+/* PRESENTACION PRODUCTOS*/
+.col-md-8 {
+  background-color: grey;
+}
+
+.card.mb-3.m-5 {
+  text-align: center;
+}
+
+/*CONTENEDOR DE PRODUCTOS*/
+.row.p-5.m-5 {
+  margin: 10px;
+}
+
+.btn.btn-primary {
+  background-color: yellow;
+  border-color: grey;
+  color: black;
+  font-weight: bold;
+}
+
+.card-title {
+  text-align: center;
+  color: rgb(240, 240, 233);
+  font-weight: bolder;
+}
+
+.card-text {
+  text-align: justify;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 15px;
+}
+
+.card.p-3.m-3 {
+  background-color: rgb(0, 0, 0);
+}
+
 .groupCard {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -470,7 +465,8 @@ footer .social a {
     margin: 40px;
     padding: 30px;
   }
-  .p2, .list1 {
+  .p2,
+  .list1 {
     text-align: justify;
   }
   .titulo2 {
@@ -487,7 +483,8 @@ footer .social a {
     margin-top: 20px;
     padding: 40px;
   }
-  .p2, .list1 {
+  .p2,
+  .list1 {
     text-align: justify;
   }
 }

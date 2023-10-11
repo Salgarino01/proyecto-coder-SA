@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+      background-color: grey;
+      border-radius: 10px;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 40px;
+}
+
+h2 {
+  text-transform:uppercase;
+}
+
+h5 {
+  font-weight: bolder;
+}
+
+.nombre {
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  color: rgb(8, 8, 0);
+  font-size: 60px;
+  padding: auto;
+  font-weight: bolder;
+}

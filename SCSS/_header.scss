@@ -1,0 +1,24 @@
+/*NAV BAR*/
+
+.navbar>.container-fluid {
+  background-color: black;
+  justify-content: flex-end;
+
+  a {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.bg-body-tertiary {
+  background-color: black !important;
+}
+
+.navbar-toggler.collapsed {
+  border-color: yellow;
+}
+
+.nav-link {
+  text-align: center;
+}
