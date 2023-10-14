@@ -3,3 +3,13 @@
 @use 'header';
 @use 'forms';
 @use 'home';
+
+
+:root {
+
+    /*colores*/
+    --gris: #717171;
+    --amarilloclaro: #f3f380;
+    /*sombra*/
+    --sombrabox: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}

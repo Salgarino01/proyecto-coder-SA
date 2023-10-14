@@ -1,4 +1,4 @@
-/*PORTADA*/
+/*INICIO*/
 
 .portada {
     display: inline-flex;
@@ -55,6 +55,7 @@
 /*Main responsive*/
 
 @media screen and (max-width: 800px) {
+
     .mainIndex {
         display: flex;
         flex-direction: column;
@@ -71,7 +72,7 @@
     .video {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 350px;
         margin-top: 0px;
         max-width: 800px;
@@ -90,7 +91,7 @@
 
     .portada {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         left: 20px;
         max-width: 800px;
         padding: 50px;
@@ -101,24 +102,88 @@
     .video {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 350px;
         max-width: 800px;
         margin-top: 0px;
     }
 
+    .ciencia {
+        height: 450px;
+    }
+
     .enlaceProductos {
-        font-size: 10x;
+        font-size: 20px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .mainIndex {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        padding: 0px;
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: center;
+        margin: 0px;
+        width: 300px;
+        padding: 0px;
+    }
+
+    .ciencia {
+        width: 250px;
+        height: 480px;
+        align-content: center;
+    }
+
+    .tciencia {
+        font-size: 30px;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 320px;
+        max-width: 800px;
+        margin-top: 0px;
+    }
+
+    .enlaceProductos {
+        font-size: 14px;
+        margin: 10px;
+        text-align: center;
+        width: 200px;
+    }
+
+    .titleConta {
+        font-size: 38px;
+        margin: 18px;
+    }
+
+    .tituloGuia {
+        width: 200px;
+    }
+
+    .video {
+        width: 250px;
+    }
+}
+
+/*INICIO*/
 
 body {
     background-image: url(../img/BACKGROUND.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-   margin: 0;
-   margin-bottom: 40px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 /* PRESENTACION PRODUCTOS*/
@@ -172,6 +237,52 @@ body {
     padding: 20px;
 }
 
+
+/*productos responsive aplicando variable*/ 
+
+@media screen and (max-width: 800px) {
+  .row.p-5.m-5{
+    display: grid;
+    grid-template-columns:2fr 2fr;
+  }
+.card.mb-3.m-5{
+    box-shadow: var(--sombrabox);
+}
+
+  .card.p-3.m-3{
+    background-color: var(--gris);
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+    .row.p-5.m-5{
+      display:flex;
+      justify-content: space-around;  
+  }
+
+  .card.mb-3.m-5{
+    box-shadow: var(--sombrabox);
+}
+
+  .card.p-3.m-3{
+    background-color: var(--gris);
+  }
+}
+
+@media screen and (max-width: 320px) {
+    .row.p-5.m-5{
+     display: grid;
+     grid-template-columns: 3fr;
+  }
+
+  .card.mb-3.m-5{
+    box-shadow: var(--sombrabox);
+}
+}
+
+/*concejos mtto*/
+
 .mtto {
     overflow: hidden;
     position: relative;
@@ -198,7 +309,7 @@ body {
     width: 100px;
 }
 
-.titulo2 {
+.titulomt {
     text-align: center;
     font-size: 60px;
     text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
@@ -234,42 +345,137 @@ body {
 
 /* mtto responsive*/
 
-@media screen and (max-width: 600px) {
-    .groupCard {
+@media screen and (max-width: 800px) {
+    .mainmto{
+        display: flex;
+        flex-direction: column;
+        width: 799px;
+    }
+   
+    #groupCard.groupCard {
+        padding-top: 10px;
         flex-direction: column;
         display: flex;
-        width: 400px;
+        width: 799px;
         align-items: center;
-        font-size: 12px;
-        margin: 40px;
+        font-size: 20px;
+        margin: 0px;
         padding: 30px;
     }
 
+    .mtto{
+        align-items: center;
+        align-content: center;
+        padding: 25px;
+       text-align: center;
+    }
+
+    .imgMtto{
+        width: 500px;
+        margin: 20px;
+    }
+
     .p2,
     .list1 {
         text-align: justify;
     }
 
-    .titulo2 {
-        font-size: 40px;
+    .p2{
+        font-size: 22px;
+    }
+    li{
+        font-size: 21px;
     }
 }
 
-@media screen and (max-width: 800px) {
-    .groupCard {
+@media screen and (max-width: 600px) {
+    
+    .mainmto{
+        display: flex;
+        flex-direction: column;
+        width: 599px;
+    }
+    
+    #groupCard.groupCard {
+        padding-top: 10px;
         flex-direction: column;
         display: flex;
-        width: 500px;
+        width: 599px;
         align-items: center;
-        margin: 40px;
-        margin-top: 20px;
-        padding: 40px;
+        font-size: 12px;
+        margin: 0px;
+        padding: 30px;
     }
 
+    .titulomt{
+        font-size: 50px;
+    }
+    .mtto{
+        align-items: center;
+        align-content: center;
+        width: 490px;
+        pad: 20px;
+    }
+    .imgMtto{
+        width: 400px;
+        margin: 20px;
+    }
+    
+    li{
+        font-size: 17px;
+    }
     .p2,
     .list1 {
         text-align: justify;
+        padding: 15px;
     }
+
+    .p2 {
+        font-size: 18px;
+    }
+
+    .titulomt {
+        font-size: 50px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .mainmto {
+        display: flex;
+        flex-direction: column;
+        width: 319px;
+    }
+
+    #groupCard.groupCard {
+        width: 300px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    .mtto {
+        width: 300px;
+    }
+
+    .titulomt {
+        font-size:35px;
+    }
+
+    .imgMtto {
+        width: 230px;
+        padding-left: 30px;
+    }
+
+    .p2 {
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
 }
 
 /*DISTRIBUIDORES*/
