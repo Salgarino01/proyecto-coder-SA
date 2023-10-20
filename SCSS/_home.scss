@@ -16,6 +16,7 @@
     background-color: rgb(28, 27, 27);
     width: 350px;
     height: 430px;
+
 }
 
 .video {
@@ -50,235 +51,6 @@
     height: 60px;
     padding: 5px;
     margin-top: 1%;
-}
-
-/*Main responsive*/
-
-@media screen and (max-width: 800px) {
-
-    .mainIndex {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portada {
-        display: flex;
-        flex-wrap: wrap;
-        left: 20px;
-        max-width: 800px;
-        padding: 50px;
-    }
-
-    .video {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 350px;
-        margin-top: 0px;
-        max-width: 800px;
-    }
-
-    .enlaceProductos {
-        font-size: 10x;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .mainIndex {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portada {
-        display: flex;
-        flex-direction: column;
-        left: 20px;
-        max-width: 800px;
-        padding: 50px;
-        margin: 40px;
-        margin-top: 0px;
-    }
-
-    .video {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 350px;
-        max-width: 800px;
-        margin-top: 0px;
-    }
-
-    .ciencia {
-        height: 450px;
-    }
-
-    .enlaceProductos {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .mainIndex {
-        display: flex;
-        flex-direction: column;
-        max-width: 320px;
-        padding: 0px;
-    }
-
-    .portada {
-        display: flex;
-        flex-direction: column;
-        align-content: stretch;
-        align-items: center;
-        margin: 0px;
-        width: 300px;
-        padding: 0px;
-    }
-
-    .ciencia {
-        width: 250px;
-        height: 480px;
-        align-content: center;
-    }
-
-    .tciencia {
-        font-size: 30px;
-    }
-
-    .video {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 320px;
-        max-width: 800px;
-        margin-top: 0px;
-    }
-
-    .enlaceProductos {
-        font-size: 14px;
-        margin: 10px;
-        text-align: center;
-        width: 200px;
-    }
-
-    .titleConta {
-        font-size: 38px;
-        margin: 18px;
-    }
-
-    .tituloGuia {
-        width: 200px;
-    }
-
-    .video {
-        width: 250px;
-    }
-}
-
-/*INICIO*/
-
-body {
-    background-image: url(../img/BACKGROUND.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-/* PRESENTACION PRODUCTOS*/
-
-.col-md-8 {
-    background-color: grey;
-}
-
-.card.mb-3.m-5 {
-    text-align: center;
-}
-
-/*CONTENEDOR DE PRODUCTOS*/
-
-.row.p-5.m-5 {
-    margin: 10px;
-}
-
-.btn.btn-primary {
-    background-color: yellow;
-    border-color: grey;
-    color: black;
-    font-weight: bold;
-}
-
-.card-title {
-    text-align: center;
-    color: rgb(240, 240, 233);
-    font-weight: bolder;
-}
-
-.card-text {
-    text-align: justify;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 15px;
-}
-
-.card.p-3.m-3 {
-    background-color: rgb(0, 0, 0);
-}
-
-.groupCard {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1.5fr;
-    place-content: center;
-    gap: auto;
-    color: white;
-    margin: 40px;
-    padding: 20px;
-}
-
-
-/*productos responsive aplicando variable*/ 
-
-@media screen and (max-width: 800px) {
-  .row.p-5.m-5{
-    display: grid;
-    grid-template-columns:2fr 2fr;
-  }
-.card.mb-3.m-5{
-    box-shadow: var(--sombrabox);
-}
-
-  .card.p-3.m-3{
-    background-color: var(--gris);
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-    .row.p-5.m-5{
-      display:flex;
-      justify-content: space-around;  
-  }
-
-  .card.mb-3.m-5{
-    box-shadow: var(--sombrabox);
-}
-
-  .card.p-3.m-3{
-    background-color: var(--gris);
-  }
-}
-
-@media screen and (max-width: 320px) {
-    .row.p-5.m-5{
-     display: grid;
-     grid-template-columns: 3fr;
-  }
-
-  .card.mb-3.m-5{
-    box-shadow: var(--sombrabox);
-}
 }
 
 /*concejos mtto*/
@@ -343,15 +115,54 @@ body {
     height: 150px;
 }
 
-/* mtto responsive*/
+/*concejos mtto*/
+
+/*MEDIA QUERYS*/
+
+/*800px*/
 
 @media screen and (max-width: 800px) {
-    .mainmto{
+
+    .mainIndex {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        max-width: 780px;
+
+    }
+
+    .row.p-5.m-5 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .portada {
+        display: flex;
+        left: 1px;
+        max-width: 750px;
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 350px;
+        margin-top: 0px;
+        max-width: 800px;
+    }
+
+    .enlaceProductos {
+        font-size: 10x;
+    }
+
+    .mainmto {
         display: flex;
         flex-direction: column;
         width: 799px;
     }
-   
+
     #groupCard.groupCard {
         padding-top: 10px;
         flex-direction: column;
@@ -363,14 +174,14 @@ body {
         padding: 30px;
     }
 
-    .mtto{
+    .mtto {
         align-items: center;
         align-content: center;
         padding: 25px;
-       text-align: center;
+        text-align: center;
     }
 
-    .imgMtto{
+    .imgMtto {
         width: 500px;
         margin: 20px;
     }
@@ -380,22 +191,94 @@ body {
         text-align: justify;
     }
 
-    .p2{
+    .p2 {
         font-size: 22px;
     }
-    li{
+
+    li {
         font-size: 21px;
+    }
+
+    .distr {
+        padding: 30px;
     }
 }
 
+/*800px*/
+
+/*600px*/
+
 @media screen and (max-width: 600px) {
-    
-    .mainmto{
+    .mainIndex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainmto {
         display: flex;
         flex-direction: column;
         width: 599px;
     }
-    
+
+    .distr {
+        padding: auto;
+
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: column;
+        left: 20px;
+        max-width: 800px;
+        padding: 50px;
+        margin: 40px;
+        margin-top: 0px;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 350px;
+        max-width: 800px;
+        margin-top: 0px;
+    }
+
+    .ciencia {
+        height: 450px;
+    }
+
+    .enlaceProductos {
+        font-size: 20px;
+    }
+
+    /*productos responsive aplicando variable*/
+
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
+    }
+
+    .card.p-3.m-3 {
+        background-color: var(--gris);
+    }
+
+
+    .row.p-5.m-5 {
+        display: grid;
+        grid-template-columns: 2fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
+    }
+
+    .card.p-3.m-3 {
+        background-color: var(--gris);
+    }
+
     #groupCard.groupCard {
         padding-top: 10px;
         flex-direction: column;
@@ -407,23 +290,26 @@ body {
         padding: 30px;
     }
 
-    .titulomt{
+    .titulomt {
         font-size: 50px;
     }
-    .mtto{
+
+    .mtto {
         align-items: center;
         align-content: center;
         width: 490px;
         pad: 20px;
     }
-    .imgMtto{
+
+    .imgMtto {
         width: 400px;
         margin: 20px;
     }
-    
-    li{
+
+    li {
         font-size: 17px;
     }
+
     .p2,
     .list1 {
         text-align: justify;
@@ -438,10 +324,73 @@ body {
         font-size: 50px;
 
     }
-
 }
 
+/*600px*/
+
+/*320px*/
+
 @media screen and (max-width: 320px) {
+    .mainIndex {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        padding: 0px;
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: center;
+        margin: 0px;
+        width: 300px;
+        padding: 0px;
+    }
+
+    .ciencia {
+        width: 250px;
+        height: 480px;
+        align-content: center;
+    }
+
+    .tciencia {
+        font-size: 30px;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 320px;
+        max-width: 800px;
+        margin-top: 0px;
+    }
+
+    .enlaceProductos {
+        font-size: 14px;
+        margin: 10px;
+        text-align: center;
+        width: 200px;
+    }
+
+    .titleConta {
+        font-size: 38px;
+        margin: 18px;
+    }
+
+    .tituloGuia {
+        width: 200px;
+    }
+
+    .video {
+        width: 250px;
+    }
+
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
+    }
 
     .mainmto {
         display: flex;
@@ -460,7 +409,7 @@ body {
     }
 
     .titulomt {
-        font-size:35px;
+        font-size: 35px;
     }
 
     .imgMtto {
@@ -476,24 +425,86 @@ body {
         font-size: 14px;
     }
 
+    .pventas {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .row.p-5.m-5 {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+
+
 }
 
-/*DISTRIBUIDORES*/
+/*320px*/
 
-.container.text-center {
-    background-color: black;
-    border-radius: 5px;
-    border: 20px;
-    padding: 50px;
-    margin-block: 20px;
-    -webkit-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
-    -moz-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
-    box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
+/*INICIO*/
+
+body {
+    background-image: url(../img/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
-.distr {
-    margin: 5%;
+/* PRESENTACION PRODUCTOS*/
+
+.col-md-8 {
+    background-color: grey;
 }
+
+.card.mb-3.m-5 {
+    text-align: center;
+}
+
+/*CONTENEDOR DE PRODUCTOS*/
+
+.row.p-5.m-5 {
+    margin: 10px;
+}
+
+.btn.btn-primary {
+    background-color: yellow;
+    border-color: grey;
+    color: black;
+    font-weight: bold;
+}
+
+.card-title {
+    text-align: center;
+    color: rgb(240, 240, 233);
+    font-weight: bolder;
+}
+
+.card-text {
+    text-align: justify;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+}
+
+.card.p-3.m-3 {
+    background-color: rgb(0, 0, 0);
+}
+
+.groupCard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1.5fr;
+    place-content: center;
+    gap: auto;
+    color: white;
+    margin: 40px;
+    padding: 20px;
+}
+
+
 
 /*ANIMACIONES*/
 .titleConta {
@@ -527,3 +538,21 @@ body {
 }
 
 /*ANIMACIONES*/
+
+
+/*DISTRIBUIDORES*/
+
+.container.text-center {
+    background-color: black;
+    border-radius: 5px;
+    border: 20px;
+    padding: 50px;
+    margin-block: 20px;
+    -webkit-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
+    -moz-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
+    box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
+}
+
+.distr {
+    margin: 5%;
+}
