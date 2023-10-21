@@ -117,7 +117,120 @@
 
 /*concejos mtto*/
 
-/*MEDIA QUERYS*/
+/*INICIO*/
+
+body {
+    background-image: url(../img/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+/* PRESENTACION PRODUCTOS*/
+
+.col-md-8 {
+    background-color: grey;
+}
+
+.card.mb-3.m-5 {
+    text-align: center;
+}
+
+/*CONTENEDOR DE PRODUCTOS*/
+
+.row.p-5.m-5 {
+    margin: 10px;
+}
+
+.btn.btn-primary {
+    background-color: yellow;
+    border-color: grey;
+    color: black;
+    font-weight: bold;
+}
+
+.card-title {
+    text-align: center;
+    color: rgb(240, 240, 233);
+    font-weight: bolder;
+}
+
+.card-text {
+    text-align: justify;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+}
+
+.card.p-3.m-3 {
+    background-color: rgb(0, 0, 0);
+}
+
+.groupCard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1.5fr;
+    place-content: center;
+    gap: auto;
+    color: white;
+    margin: 40px;
+    padding: 20px;
+}
+
+/*ANIMACIONES*/
+.titleConta {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.portada {
+    animation: backInUp;
+    animation-duration: 2s;
+}
+
+.col-md-4 {
+    animation: bounceOut;
+    animation-duration: 2s;
+}
+
+.formulario {
+    animation: fadeInBottomLeft;
+    animation-duration: 2s;
+}
+
+.groupCard {
+    animation: zoomInRight;
+    animation-duration: 2s;
+}
+
+.container.text-center {
+    animation: rotateIn;
+    animation-duration: 3s;
+}
+
+/*ANIMACIONES*/
+
+
+/*DISTRIBUIDORES*/
+
+.container.text-center {
+    background-color: black;
+    border-radius: 5px;
+    border: 20px;
+    padding: 50px;
+    margin-block: 20px;
+    -webkit-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
+    -moz-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
+    box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
+}
+
+.distr {
+    margin: 5%;
+}
+
+/*responsive*/
 
 /*800px*/
 
@@ -129,11 +242,6 @@
         justify-items: center;
         max-width: 780px;
 
-    }
-
-    .row.p-5.m-5 {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
     }
 
     .portada {
@@ -199,10 +307,35 @@
         font-size: 21px;
     }
 
-    .distr {
-        padding: 30px;
+    /*productos responsive aplicando variable*/
+
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
     }
+
+    .card.p-3.m-3 {
+        background-color: var(--gris);
+    }
+
+
+    .row.p-5.m-5 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
+    }
+
+    .card.p-3.m-3 {
+        background-color: var(--gris);
+    }
+
 }
+
 
 /*800px*/
 
@@ -252,33 +385,6 @@
         font-size: 20px;
     }
 
-    /*productos responsive aplicando variable*/
-
-
-    .card.mb-3.m-5 {
-        box-shadow: var(--sombrabox);
-    }
-
-    .card.p-3.m-3 {
-        background-color: var(--gris);
-    }
-
-
-    .row.p-5.m-5 {
-        display: grid;
-        grid-template-columns: 2fr;
-        align-items: center;
-        justify-items: center;
-    }
-
-    .card.mb-3.m-5 {
-        box-shadow: var(--sombrabox);
-    }
-
-    .card.p-3.m-3 {
-        background-color: var(--gris);
-    }
-
     #groupCard.groupCard {
         padding-top: 10px;
         flex-direction: column;
@@ -323,6 +429,28 @@
     .titulomt {
         font-size: 50px;
 
+    }
+
+    /*productos responsive aplicando variable*/
+
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
+    }
+
+    .card.p-3.m-3 {
+        background-color: var(--gris);
+    }
+
+    .row.p-5.m-5 {
+        display: grid;
+        grid-template-columns: 2fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
     }
 }
 
@@ -374,6 +502,19 @@
         width: 200px;
     }
 
+    .row.p-5.m-5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .card.p-3.m-3{
+        max-width: 200px;
+
+    }
+
     .titleConta {
         font-size: 38px;
         margin: 18px;
@@ -385,11 +526,6 @@
 
     .video {
         width: 250px;
-    }
-
-
-    .card.mb-3.m-5 {
-        box-shadow: var(--sombrabox);
     }
 
     .mainmto {
@@ -431,128 +567,22 @@
 
     }
 
-    .row.p-5.m-5 {
-        display: grid;
-        grid-template-columns: 2fr;
+
+
+    /*productos responsive aplicando variable*/
+
+
+    .card.mb-3.m-5 {
+        box-shadow: var(--sombrabox);
     }
 
+    .card.p-3.m-3 {
+        background-color: var(--gris);
+    }
 
 
 }
 
 /*320px*/
 
-/*INICIO*/
-
-body {
-    background-image: url(../img/BACKGROUND.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-/* PRESENTACION PRODUCTOS*/
-
-.col-md-8 {
-    background-color: grey;
-}
-
-.card.mb-3.m-5 {
-    text-align: center;
-}
-
-/*CONTENEDOR DE PRODUCTOS*/
-
-.row.p-5.m-5 {
-    margin: 10px;
-}
-
-.btn.btn-primary {
-    background-color: yellow;
-    border-color: grey;
-    color: black;
-    font-weight: bold;
-}
-
-.card-title {
-    text-align: center;
-    color: rgb(240, 240, 233);
-    font-weight: bolder;
-}
-
-.card-text {
-    text-align: justify;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 15px;
-}
-
-.card.p-3.m-3 {
-    background-color: rgb(0, 0, 0);
-}
-
-.groupCard {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1.5fr;
-    place-content: center;
-    gap: auto;
-    color: white;
-    margin: 40px;
-    padding: 20px;
-}
-
-
-
-/*ANIMACIONES*/
-.titleConta {
-    animation: bounce;
-    animation-duration: 2s;
-}
-
-.portada {
-    animation: backInUp;
-    animation-duration: 2s;
-}
-
-.col-md-4 {
-    animation: bounceOut;
-    animation-duration: 2s;
-}
-
-.formulario {
-    animation: fadeInBottomLeft;
-    animation-duration: 2s;
-}
-
-.groupCard {
-    animation: zoomInRight;
-    animation-duration: 2s;
-}
-
-.container.text-center {
-    animation: rotateIn;
-    animation-duration: 3s;
-}
-
-/*ANIMACIONES*/
-
-
-/*DISTRIBUIDORES*/
-
-.container.text-center {
-    background-color: black;
-    border-radius: 5px;
-    border: 20px;
-    padding: 50px;
-    margin-block: 20px;
-    -webkit-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
-    -moz-box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
-    box-shadow: 6px 6px 54px -8px rgba(255, 234, 0, 1);
-}
-
-.distr {
-    margin: 5%;
-}
+/*responsive*/
